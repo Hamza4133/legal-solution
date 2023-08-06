@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>legal</title>
+
+    <!-- EB Garamond font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+.eb{
+font-family: 'EB Garamond', serif;
+}
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+</style>
+
+
+    <!-- daisy -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font -->
+
+<script src="https://kit.fontawesome.com/9b5418d24c.js" crossorigin="anonymous"></script>
+<!-- class -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'main-color': '#B68C5A',                
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
+<body class="container mx-auto">
+    <header>
+      <nav class="flex justify-between items-center pt-6">
+        <div class="flex  gap-4">
+            <img src="images/Group 1.png" alt=""> 
+            <p class="eb text-3xl font-bold">Justice</p>          
+        </div>
+      
+        <p class="poppins">Home</p>
+        <p class="poppins">Services <i class="fa-solid fa-angle-right"></i></p>
+        <p class="poppins">cases <i class="fa-solid fa-angle-right"></i></p>
+        <p class="poppins">Blog <i class="fa-solid fa-angle-right"></i></p>
+        <p class="poppins">Contact us <i class="fa-solid fa-angle-right"></i></p>
+        <button class="btn px-4  poppins bg-main-color text-white rounded-lg"> Free Consulation </button>
+      </nav>
+
+<div class="container text-white">
+    <div class="hero  my-7 mx-auto" style="background-image: url(images/banner.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="w-3/4 mx-auto">
+            <h1 class="mb-10 mt-10 eb text-white text-5xl font-bold">We Provide Effective <br> Legal Solution</h1>
+            <p class="mb-5 text-white poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <input class="rounded-lg w-80 pl-5 py-3 mr-4 poppins" type="text" placeholder="Search your services" name=""  id="">
+            <button class="btn rounded-lg bg-main-color btn-primary text-white poppins border-none">Search</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+    </header>
     
 </body>
 </html>
